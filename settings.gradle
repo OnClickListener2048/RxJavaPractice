@@ -1,0 +1,3 @@
+include ':aspectJ'
+rootProject.name='RxJavaPractice'
+include ':app'
