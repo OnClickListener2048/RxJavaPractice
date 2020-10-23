@@ -35,7 +35,7 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
     implementation files('libs/amqp-client-4.0.0.jar')
     implementation project(path: ':aspectJ')
-    implementation files('libs\\slf4j-api-1.7.22.jar')
+    implementation files('libs/slf4j-api-1.7.22.jar')
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'

@@ -51,7 +51,7 @@ public class RabbitMQThread {
         factory.setHost(ip);
         factory.setPort(5673);
         factory.setUsername("admin");
-        factory.setPassword("123456");
+        factory.setPassword("1qazxsw2");
         factory.setAutomaticRecoveryEnabled(true);
         factory.setRequestedHeartbeat(60);
     }
@@ -114,7 +114,7 @@ public class RabbitMQThread {
 
                 String dataQueueName = "spring.queue.alarmInfo";
                 String id = "spring.queue.alarmInfo";
-                alarmChannel.queueBind(dataQueueName, "spring.queue.producerExchange", id);
+                alarmChannel.queueBind(dataQueueName, "spring.queue.tag", id);
                 alarmChannel.basicConsume(dataQueueName, false,
                         new DefaultConsumer(alarmChannel) {
                             @Override

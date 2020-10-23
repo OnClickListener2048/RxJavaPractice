@@ -66,7 +66,7 @@ public class MainActivity extends RxAppCompatActivity {
 //        com.android.phone/.MobileNetworkSettings
 
 
-        RabbitMQThread rabbitMQThread = new RabbitMQThread("1.1.1.1");
+        RabbitMQThread rabbitMQThread = new RabbitMQThread("10.50.20.216");
         rabbitMQThread.init();
     }
 
